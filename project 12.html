@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> B2IN WEB </title>
+    
+    <style>
+
+    
+        .logo{
+            height: 90px;
+        }
+        section{
+            padding-bottom: 90px;
+        }
+       
+        .carousel-inner img{
+          height: 80vh;
+          object-fit:cover;
+        }
+
+        .card:hover{
+          transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .card {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-content {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.form-box {
+  border: 2px solid #333;
+  padding: 30px;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.images-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-column img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+  
+  .images-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 40px 0;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  text-transform: uppercase;
+}
+
+    </style>
+   </head>
+    <body>
+    <h1 >WELCOME TO B2IN DEALERS</h1>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container-fluid">
+   <a href="#"><img src="logo.png" alt="B2IN Dealers Logo" height="90px" width="120px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="available.html">Available </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="form.html">Booking</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.html">Contact Me </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Models
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <li><a class="dropdown-item" href="old models.html">Old Models</a></li>
+                  <li><a class="dropdown-item" href="newmodel.html">New Models</a></li>
+           
+            <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="upcomming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+         
+        </li>
+      </ul>
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Search bikes..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+   </div>
+    </nav>
+    <br>
+  
+ 
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+<!-- Carousel Indicators -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+</div>
+
+<!-- Carousel Inner -->
+<div class="carousel-inner">
+
+  <!-- Slide 1 -->
+  <div class="carousel-item active">
+    <img src="jawa.jpg" class="d-block w-100" alt="Jawa 42">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Jawa 42</h5>
+      <p>Classic retro-styled cruiser for modern riders.</p>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="carousel-item">
+    <img src="gt.png" class="d-block w-100" alt="GT Bike">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>GT Bike</h5>
+      <p>High-speed performance with comfort for long rides.</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="carousel-item">
+    <img src="4.jpg" class="d-block w-100" alt="Bike 3">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Classic Bike</h5>
+      <p>Reliable and durable motorcycle for everyday use.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="carousel-item">
+    <img src="11.jpg" class="d-block w-100" alt="Bike 4">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Retro Cruiser</h5>
+      <p>Stylish design with smooth riding experience.</p>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="carousel-item">
+    <img src="13.jpg" class="d-block w-100" alt="Bike 5">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Modern Tourer</h5>
+      <p>Perfect balance of power and comfort.</p>
+    </div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="carousel-item">
+    <img src="14.jpg" class="d-block w-100" alt="Bike 6">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Adventure Bike</h5>
+      <p>Built for long rides and tough roads.</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Controls -->
+ 
+   
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br><br>
+<br><br><br><br><br><br>
+<section>
+  <h1> Best Selling Of The Year </h1>
+  <div class="container">
+    <div class="row">
+
+ 
+<!-- Card 1-->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="nn.jpg" class="card-img-top" alt="Royal Enfield Classic 350" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield Classic 350</b></h5>
+      <p class="card-text flex-grow-1">
+        The Royal Enfield Classic 350 is a retro-styled motorcycle known for its
+        signature thump, relaxed riding posture, and timeless design. It is ideal
+        for city rides as well as long highway cruising.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Card 2 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="bullet.avif" class="card-img-top" alt="Honda H'ness CB350" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Honda H'ness CB350</b></h5>
+      <p class="card-text flex-grow-1">
+        The Honda H'ness CB350 combines classic styling with modern technology, featuring ABS, traction control, 
+        and a digital-analog instrument cluster.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="4.jpg" class="card-img-top" alt="Royal Enfield Standard" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield Bullet Standard (Older Model)</b></h5>
+      <p class="card-text flex-grow-1">
+        Legendary motorcycle with a timeless design, loved for its ruggedness and ability to handle tough roads.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="gtc.png" class="card-img-top" alt="Royal Enfield GT Continental" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield GT Continental</b></h5>
+      <p class="card-text flex-grow-1">
+        Premium touring motorcycle with modern performance and classic British heritage.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="gt.png" class="card-img-top" alt="GT 650" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>GT 650</b></h5>
+      <p class="card-text flex-grow-1">
+        High-performance commuter with impressive power, efficiency, and modern features like ABS.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="jawa.jpg" class="card-img-top" alt="Jawa" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Jawa</b></h5>
+      <p class="card-text flex-grow-1">
+        Reliable and fuel-efficient commuter bike, practical for daily commutes and long rides.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+    </div>
+  </div>
+</div>
+
+ 
+    </div>
+  </div>
+</section>
+    
+<section style="background-color: #f8f9fa; padding: 60px 0;">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: bold; color: white;">Royal Enfield Bullet 350</h1>
+    <div class="row">
+      <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+        <img src="nn.jpg" alt="Royal Enfield Bullet 350" class="img-fluid rounded" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <div class="col-md-6">
+        <h3>History and Legacy</h3>
+        <p>The Royal Enfield Bullet 350 is a legendary motorcycle that has been a staple
+           in the biking world since its introduction in 1932. Originally a British-made machine,
+           production shifted to India in 1955, where it became synonymous with adventure, reliability,
+            and timeless style. Over the decades, it has evolved while retaining its classic charm, making
+            it a favorite among riders who appreciate heritage and performance.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Retro Design:</strong> Iconic teardrop fuel tank, chrome accents,
+            and a minimalist aesthetic that turns heads wherever it goes.</li>
+
+          <li><strong>Engine:</strong> 346cc single-cylinder, air-cooled engine with
+            a 5-speed gearbox, delivering that signature thumping sound.</li>
+          <li><strong>Comfort:</strong> Upright seating position, sprung saddle,
+            and handlebars designed for long-distance cruising.</li>
+          <li><strong>Safety:</strong> Equipped with front and rear drum brakes,
+             and optional ABS for added confidence on the road.</li>
+          <li><strong>Customization:</strong> Highly customizable with a wide
+             range of accessories, from vintage seats to modern tech integrations.</li>
+        </ul>
+        <h3>Performance</h3>
+        <p>The Bullet 350 is not just about looks;
+          it's a performer. With a top speed of around
+          90-100 km/h, it offers excellent torque (28 Nm)
+           for effortless acceleration, especially in city
+           traffic or on winding roads. Fuel efficiency is
+           impressive at 35-40 km/l, making it economical for
+            daily commutes or weekend getaways. Whether you're a
+             seasoned rider or a beginner, the Bullet provides a
+             smooth, engaging ride that connects you to the open road.</p>
+
+        <p>Why it's interesting: Beyond its specs, the Bullet 350 represents
+           a piece of motorcycle history. It's ridden by adventurers, celebrities,
+            and everyday enthusiasts alike, symbolizing freedom and rebellion.
+             Owning one isn't just about transportation—it's about joining a global
+              community of riders who cherish the art of motorcycling.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #e9ecef; padding: 60px 0;">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: bold; color: white;">Royal Enfield GT 650</h1>
+    <div class="row">
+      <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+        <img src="gt.png" alt="Royal Enfield GT 650" class="img-fluid rounded" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <div class="col-md-6">
+        <h3>History and Legacy</h3>
+        <p>
+The Royal Enfield Continental GT 650 is a café racer motorcycle introduced in 2018,
+inspired by classic British racing bikes. It combines the brand's heritage of classic British engineering with contemporary design and technology. Inspired by the legendary GT series from the 1940s and 1950s, this bike revives the spirit of long-distance touring while appealing to modern riders seeking performance and style.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Modern Design:</strong> Sleek, aggressive styling with a muscular fuel tank, LED lighting, and a digital TFT instrument cluster for a premium feel.</li>
+          <li><strong>Engine:</strong> 648cc parallel-twin engine producing 47 hp and 52 Nm of torque, paired with a 6-speed gearbox for smooth power delivery.</li>
+          <li><strong>Comfort:</strong> Ergonomic seating for rider and pillion, adjustable suspension, and wind protection for extended rides.</li>
+          <li><strong>Safety:</strong> Dual-channel ABS, traction control, and slipper clutch for enhanced safety and control.</li>
+          <li><strong>Technology:</strong> Bluetooth connectivity, USB charging port, and ride modes (Rain, Road, Sport) for adaptable performance.</li>
+        </ul>
+        <h3>Performance</h3>
+        <p>The GT 650 delivers impressive performance with a top speed of around 170 km/h and acceleration that makes highway cruising effortless. Its fuel efficiency stands at approximately 25-30 km/l, making it suitable for long tours. The bike's handling is agile yet stable, offering a thrilling ride on both city streets and open highways. Whether you're commuting or embarking on a cross-country adventure, the GT 650 provides a balance of power, comfort, and reliability.</p>
+
+        <p>Why it's interesting: The GT 650 represents Royal Enfield's evolution into modern motorcycling, appealing to riders who want a bike that's both nostalgic and cutting-edge. It's a symbol of adventure and freedom, perfect for those who enjoy the open road with a touch of luxury.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #f8f9fa; padding: 60px 0;">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: bold; color: white;">Jawa 42</h1>
+    <div class="row">
+      <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+        <img src="jawa.jpg" alt="Jawa 42" class="img-fluid rounded" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <div class="col-md-6">
+        <h3>History and Legacy</h3>
+        <p>The Jawa 42 is a modern retro-styled cruiser that revives the spirit of classic motorcycles. Introduced by Classic Legends Pvt. Ltd., it combines vintage aesthetics with contemporary engineering, appealing to riders who appreciate heritage and style.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Retro Design:</strong> Teardrop fuel tank, chrome accents, and minimalist styling that echoes classic bikes.</li>
+          <li><strong>Engine:</strong> 293cc single-cylinder engine with a 6-speed gearbox, delivering smooth power.</li>
+          <li><strong>Comfort:</strong> Upright seating and ergonomic design for comfortable rides.</li>
+          <li><strong>Safety:</strong> Front and rear disc brakes with ABS for enhanced safety.</li>
+          <li><strong>Technology:</strong> Digital instrument cluster and modern features for a premium feel.</li>
+        </ul>
+        <h3>Performance</h3>
+        <p>The Jawa 42 offers a top speed of around 130 km/h and excellent torque for city riding. Fuel efficiency is around 30-35 km/l, making it economical. Its handling is agile, providing a fun and engaging ride.</p>
+
+        <p>Why it's interesting: The Jawa 42 represents a blend of old-world charm and new-world technology, perfect for riders seeking a unique cruiser experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #e9ecef; padding: 60px 0;">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: bold; color: white;">GT Continental</h1>
+    <div class="row">
+      <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+        <img src="gtc.png" alt="GT Continental" class="img-fluid rounded" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <div class="col-md-6">
+        <h3>History and Legacy</h3>
+        <p>The GT Continental is a premium touring motorcycle inspired by classic British designs. It offers a luxurious riding experience with modern performance, making it ideal for long-distance adventures.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Modern Design:</strong> Sleek lines, LED lighting, and a comfortable touring posture.</li>
+          <li><strong>Engine:</strong> 650cc parallel-twin engine with 47 hp and 52 Nm of torque.</li>
+          <li><strong>Comfort:</strong> Adjustable suspension and wind protection for extended rides.</li>
+          <li><strong>Safety:</strong> Dual-channel ABS and traction control.</li>
+          <li><strong>Technology:</strong> TFT display, Bluetooth connectivity, and ride modes.</li>
+        </ul>
+        <h3>Performance</h3>
+        <p>With a top speed of 170 km/h and smooth acceleration, the GT Continental excels on highways. Fuel efficiency is 25-30 km/l, and its stable handling makes it perfect for touring.</p>
+
+        <p>Why it's interesting: This bike combines heritage with cutting-edge features, appealing to riders who want luxury and performance in one package.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #f8f9fa; padding: 60px 0;">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: bold; color: white;">Royal Enfield Classic 350</h1>
+    <div class="row">
+      <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+        <img src="oldie.png" alt="Royal Enfield Classic 350" class="img-fluid rounded" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <div class="col-md-6">
+        <h3>History and Legacy</h3>
+        <p>The Royal Enfield Classic 350 is a timeless motorcycle that has been a favorite since the 1950s. It embodies the brand's legacy of durability and style, evolving with modern updates while retaining its classic appeal.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Retro Design:</strong> Iconic chrome details, teardrop tank, and vintage aesthetics.</li>
+          <li><strong>Engine:</strong> 346cc single-cylinder engine with a 5-speed gearbox.</li>
+          <li><strong>Comfort:</strong> Sprung saddle and upright seating for long rides.</li>
+          <li><strong>Safety:</strong> Drum brakes with optional ABS.</li>
+          <li><strong>Customization:</strong> Wide range of accessories for personalization.</li>
+        </ul>
+        <h3>Performance</h3>
+        <p>Offering a top speed of 90-100 km/h and strong torque, the Classic 350 is reliable for city and highway use. Fuel efficiency is 35-40 km/l, making it economical.</p>
+
+        <p>Why it's interesting: This bike is a symbol of motorcycle heritage, loved by enthusiasts for its ruggedness and the sense of freedom it provides.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: white; padding: 60px 0;">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 40px; font-weight: bold;">
+      Why Choose B2IN Dealers?
+    </h2>
+
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Authentic Bikes</h4>
+          <p>
+            100% genuine motorcycles with complete documentation and warranty.
+            We source directly from authorized dealers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Best Prices</h4>
+          <p>
+            Competitive pricing with flexible payment options.
+            Financing plans and trade-in services available.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card">
+          <h4>✓ Expert Support</h4>
+          <p>
+            Our experienced team provides personalized guidance to help you
+            choose the perfect bike.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hover CSS -->
+<style>
+.choose-card{
+  text-align:center;
+  padding:50px;
+  background:white;
+  border-radius:8px;
+  border:2px solid #28a745;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:0.1s ease;
+  cursor:pointer;
+
+  /* equal height */
+  height:100%;
+}
+
+.choose-card h4{
+  color:#28a745;
+  font-weight:bold;
+  margin-bottom:15px;
+  transition:0.1s ease;
+}
+
+.choose-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.choose-card:hover h4{
+  color:#1e7e34;
+}
+</style>
+
+
+
+<!-- Footer -->
+<footer style="margin-top:60px; background:#eaeaea; padding:40px 0;">
+  <div class="container">
+    
+    <!-- Footer Box -->
+    <div class="footer-box">
+      
+      <div class="footer-flex">
+        
+        <!-- About -->
+        <div class="footer-item">
+          <h5>B2IN Dealers</h5>
+          <p>Your trusted destination for premium bikes and services.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-item">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="available.html">Available Bikes</a></li>
+            <li><a href="form.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-item">
+          <h5>Contact</h5>
+          <p>Email: info@B2INdealers.com</p>
+          <p>Phone: 9849999490 / 9752426271</p>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="footer-copy">
+        © 2026 <b>B2IN Dealers</b> | All Rights Reserved
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Hover CSS -->
+<style>
+.footer-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  transition:0.3s ease;
+}
+
+.footer-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.footer-flex{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-item{
+  flex:1;
+  min-width:220px;
+  padding:15px;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+.footer-item:hover{
+  background:#f5f5f5;
+  transform:translateY(-3px);
+}
+
+.footer-item ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-item a{
+  text-decoration:none;
+  color:#000;
+  transition:0.3s ease;
+}
+
+.footer-item a:hover{
+  color:#007bff;
+  text-decoration:underline;
+}
+
+.footer-copy{
+  text-align:center;
+  margin-bottom:0;
+}
+</style>
+
+
+  </body>
+</html>
+
