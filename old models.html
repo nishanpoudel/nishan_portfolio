@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> B2IN WEB </title>
+
+    <style>
+
+
+        .logo{
+            height: 90px;
+        }
+        section{
+            padding-bottom: 90px;
+        }
+
+        .carousel-inner img{
+          height: 80vh;
+          object-fit:cover;
+        }
+
+        .card:hover{
+          transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .card {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-content {
+  background-color: #d3d3d3;
+  padding: 40px 0;
+}
+
+.form-box {
+  border: 2px solid #333;
+  padding: 30px;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.images-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-column img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .images-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 40px 0;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  text-transform: uppercase;
+}
+
+    </style>
+   </head>
+    <body>
+        
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <a href="project 12.html"><img src="logo.png" alt="B2IN Dealers Logo"height="90px" width="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="project 12.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="available.html">Available </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="form.html">Booking</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Models
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="old models.html">Old Models</a></li>
+                  <li><a class="dropdown-item" href="newmodel.html">New Models</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="upcomming.html">Upcoming</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search bikes..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <br>
+
+<section>
+  <h1> Old Models </h1>
+  <div class="container">
+    <div class="row">
+
+   <!-- Card 1 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="5.jpg" class="card-img-top" alt="Royal Enfield Bullet" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield Bullet 350 (Classic/Modern Variant)</b></h5>
+      <p class="card-text flex-grow-1">
+        The Royal Enfield Bullet 350 is known for its iconic retro design and signature thumping exhaust sound. 
+        It has a strong metal body, comfortable upright seating, and a torquey engine ideal for long rides.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="bullet.avif" class="card-img-top" alt="Honda H'ness CB350" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Honda H'ness CB350</b></h5>
+      <p class="card-text flex-grow-1">
+        The Honda H'ness CB350 combines classic styling with modern technology, featuring ABS, traction control, 
+        and a digital-analog instrument cluster.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="4.jpg" class="card-img-top" alt="Royal Enfield Standard" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield Bullet Standard (Older Model)</b></h5>
+      <p class="card-text flex-grow-1">
+        Legendary motorcycle with a timeless design, loved for its ruggedness and ability to handle tough roads.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="gtc.png" class="card-img-top" alt="Royal Enfield GT Continental" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Royal Enfield GT Continental</b></h5>
+      <p class="card-text flex-grow-1">
+        Premium touring motorcycle with modern performance and classic British heritage.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="gt.png" class="card-img-top" alt="GT 650" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>GT 650</b></h5>
+      <p class="card-text flex-grow-1">
+        High-performance commuter with impressive power, efficiency, and modern features like ABS.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="jawa.jpg" class="card-img-top" alt="Jawa" style="height:300px; object-fit:cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><b>Jawa</b></h5>
+      <p class="card-text flex-grow-1">
+        Reliable and fuel-efficient commuter bike, practical for daily commutes and long rides.
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+      <a href="form.html" class="btn btn-success">Book Now</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section style="background-color: white; padding: 60px 0;">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 40px; font-weight: bold;">
+      Why Choose B2IN Dealers?
+    </h2>
+
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Authentic Bikes</h4>
+          <p>
+            100% genuine motorcycles with complete documentation and warranty.
+            We source directly from authorized dealers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Best Prices</h4>
+          <p>
+            Competitive pricing with flexible payment options.
+            Financing plans and trade-in services available.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card">
+          <h4>✓ Expert Support</h4>
+          <p>
+            Our experienced team provides personalized guidance to help you
+            choose the perfect bike.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hover CSS -->
+<style>
+.choose-card{
+  text-align:center;
+  padding:50px;
+  background:white;
+  border-radius:8px;
+  border:2px solid #28a745;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:0.1s ease;
+  cursor:pointer;
+
+  /* equal height */
+  height:100%;
+}
+
+.choose-card h4{
+  color:#28a745;
+  font-weight:bold;
+  margin-bottom:15px;
+  transition:0.1s ease;
+}
+
+.choose-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.choose-card:hover h4{
+  color:#1e7e34;
+}
+</style>
+
+
+
+<!-- Footer -->
+<footer style="margin-top:60px; background:#eaeaea; padding:40px 0;">
+  <div class="container">
+    
+    <!-- Footer Box -->
+    <div class="footer-box">
+      
+      <div class="footer-flex">
+        
+        <!-- About -->
+        <div class="footer-item">
+          <h5>B2IN Dealers</h5>
+          <p>Your trusted destination for premium bikes and services.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-item">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="available.html">Available Bikes</a></li>
+            <li><a href="form.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-item">
+          <h5>Contact</h5>
+          <p>Email: info@B2INdealers.com</p>
+          <p>Phone: +977-9849999490 / 9752426271</p>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="footer-copy">
+        © 2026 <b>B2IN Dealers</b> | All Rights Reserved
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Hover CSS -->
+<style>
+.footer-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  transition:0.3s ease;
+}
+
+.footer-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.footer-flex{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-item{
+  flex:1;
+  min-width:220px;
+  padding:15px;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+.footer-item:hover{
+  background:#f5f5f5;
+  transform:translateY(-3px);
+}
+
+.footer-item ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-item a{
+  text-decoration:none;
+  color:#000;
+  transition:0.3s ease;
+}
+
+.footer-item a:hover{
+  color:#007bff;
+  text-decoration:underline;
+}
+
+.footer-copy{
+  text-align:center;
+  margin-bottom:0;
+}
+</style>
+
+
+  </body>
+</html>
+
+<script>
+function toggleSourceOther(sel){
+  var other = document.getElementById('source_other');
+  if(!other) return;
+  if(sel.value === 'other'){
+    other.style.display = 'block';
+    other.required = true;
+    other.focus();
+  } else {
+    other.style.display = 'none';
+    other.required = false;
+    other.value = '';
+  }
+}
+</script>

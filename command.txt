@@ -1,0 +1,19 @@
+"PURANO Ko LAGI"
+
+
+git add .
+
+git commit -m "new commit"
+
+git push origin master
+
+
+
+"NAYA Ko Lagi"
+
+git init
+git status
+git add .
+git commit -m "initial commit"
+git remote add origin "github ma vako paste garni"
+git push origin master

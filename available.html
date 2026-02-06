@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> B2IN WEB - Available Bikes </title>
+    
+    <style>
+        .logo{
+            height: 90px;
+        }
+        section{
+            padding-bottom: 90px;
+        }
+       
+        .carousel-inner img{
+          height: 80vh;
+          object-fit:cover;
+        }
+
+        .card:hover{
+          transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .card {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-content {
+  background-color: #d3d3d3;
+  padding: 40px 0;
+}
+
+.form-box {
+  border: 2px solid #333;
+  padding: 30px;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.images-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-column img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+  
+  .images-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 40px 0;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  text-transform: uppercase;
+}
+
+    </style>
+   </head>
+    <body>
+    <h1 >AVAILABLE BIKES</h1>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container-fluid">
+   <a href="project 12.html"><img src="logo.png" alt="B2IN Dealers Logo" height="90px" width="120px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+          <a class="nav-link active" href="project 12.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="form.html">Booking</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Models
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="old models.html">Old Models</a></li>
+                  <li><a class="dropdown-item" href="newmodel.html">New Models</a></li>
+           
+            <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="upcomming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+         
+        </li>
+      </ul>
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Search bikes..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+   </div>
+    </nav>
+    <br>
+  
+<section>
+  <h1> Bikes Available </h1>
+  <div class="container">
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="nn.jpg" class="card-img-top" alt="Royal Enfield Bullet 350" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Bullet 350 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 346cc<br>
+              Year: 2018<br>
+              Mileage: 16,500 km<br>
+              Condition: Very Good
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+         <img src="bullet.avif" class="card-img-top" alt="Honda H'ness CB350"style="height:300px; object-fit:cover; ">
+
+          <div class="card-body">
+            <h5 class="card-title"><b>Honda H'ness CB350 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 348cc<br>
+              Year: 2021<br>
+              Mileage: 9,200 km<br>
+              Condition: Excellent
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="4.jpg" class="card-img-top" alt="Royal Enfield Classic 350" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Classic 350 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 346cc<br>
+              Year: 2017<br>
+              Mileage: 21,000 km<br>
+              Condition: Good
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="gtc.png" class="card-img-top" alt="Royal Enfield GT Continental" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Continental GT 650</b></h5>
+            <p class="card-text">
+              Engine Capacity: 648cc<br>
+              Year: 2022<br>
+              Mileage: 6,500 km<br>
+              Condition: Excellent
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="gt.png" class="card-img-top" alt="Royal Enfield GT 650" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Interceptor 650 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 648cc<br>
+              Year: 2020<br>
+              Mileage: 12,000 km<br>
+              Condition: Very Good
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="jawa.jpg" class="card-img-top" alt="Jawa 42" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Jawa 42 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 293cc<br>
+              Year: 2019<br>
+              Mileage: 11,500 km<br>
+              Condition: Good
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="bull.png" class="card-img-top" alt="Royal Enfield Thunderbird 350" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Thunderbird 350 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 346cc<br>
+              Year: 2016<br>
+              Mileage: 28,000 km<br>
+              Condition: Good<br>
+              Features: Comfortable touring stance
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="11.jpg" class="card-img-top" alt="Harley-Davidson Sportster 883" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Harley-Davidson Sportster 883 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 883cc<br>
+              Year: 2015<br>
+              Mileage: 18,000 km<br>
+              Condition: Good<br>
+              Features: V-twin cruiser, chrome exhaust
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="6.jpg" class="card-img-top" alt="Royal Enfield Classic 350" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Classic 350 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 346cc<br>
+              Year: 2019<br>
+              Mileage: 14,000 km<br>
+              Condition: Very Good<br>
+              Features: Retro design, comfortable ride
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="0.png" class="card-img-top" alt="Royal Enfield Continental GT 650" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Royal Enfield Continental GT 650 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 648cc<br>
+              Year: 2021<br>
+              Mileage: 7,500 km<br>
+              Condition: Excellent<br>
+              Features: Cafe racer, twin-cylinder engine
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="duke.png" class="card-img-top" alt="KTM Duke 200" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>KTM Duke 200 (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 199.5cc<br>
+              Year: 2020<br>
+              Mileage: 14,000 km<br>
+              Condition: Good<br>
+              Features: Aggressive styling, lightweight chassis
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="jawab.png" class="card-img-top" alt="Jawa Perak" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Jawa Perak (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 334cc<br>
+              Year: 2022<br>
+              Mileage: 6,200 km<br>
+              Condition: Excellent<br>
+              Features: Bobber styling, premium build
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="oldie.png" class="card-img-top" alt="Honda CB750 Four" style="height:300px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title"><b>Honda CB750 Four (Second-Hand)</b></h5>
+            <p class="card-text">
+              Engine Capacity: 736cc<br>
+              Year: 1976<br>
+              Mileage: 32,000 km<br>
+              Condition: Good<br>
+              Features: Classic inline-four, vintage styling
+            </p>
+            <a href="form.html" class="btn btn-primary">Book Now</a>
+            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section style="background-color: white; padding: 60px 0;">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 40px; font-weight: bold;">
+      Why Choose B2IN Dealers?
+    </h2>
+
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Authentic Bikes</h4>
+          <p>
+            100% genuine motorcycles with complete documentation and warranty.
+            We source directly from authorized dealers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card" >
+          <h4>✓ Best Prices</h4>
+          <p>
+            Competitive pricing with flexible payment options.
+            Financing plans and trade-in services available.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="choose-card">
+          <h4>✓ Expert Support</h4>
+          <p>
+            Our experienced team provides personalized guidance to help you
+            choose the perfect bike.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hover CSS -->
+<style>
+.choose-card{
+  text-align:center;
+  padding:50px;
+  background:white;
+  border-radius:8px;
+  border:2px solid #28a745;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:0.1s ease;
+  cursor:pointer;
+
+  /* equal height */
+  height:100%;
+}
+
+.choose-card h4{
+  color:#28a745;
+  font-weight:bold;
+  margin-bottom:15px;
+  transition:0.1s ease;
+}
+
+.choose-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.choose-card:hover h4{
+  color:#1e7e34;
+}
+</style>
+
+
+
+<!-- Footer -->
+<footer style="margin-top:60px; background:#eaeaea; padding:40px 0;">
+  <div class="container">
+    
+    <!-- Footer Box -->
+    <div class="footer-box">
+      
+      <div class="footer-flex">
+        
+        <!-- About -->
+        <div class="footer-item">
+          <h5>B2IN Dealers</h5>
+          <p>Your trusted destination for premium bikes and services.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-item">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="available.html">Available Bikes</a></li>
+            <li><a href="form.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-item">
+          <h5>Contact</h5>
+          <p>Email: info@B2INdealers.com</p>
+          <p>Phone: 9849999490 / 9752426271</p>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="footer-copy">
+        © 2026 <b>B2IN Dealers</b> | All Rights Reserved
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Hover CSS -->
+<style>
+.footer-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  transition:0.3s ease;
+}
+
+.footer-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.footer-flex{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-item{
+  flex:1;
+  min-width:220px;
+  padding:15px;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+.footer-item:hover{
+  background:#f5f5f5;
+  transform:translateY(-3px);
+}
+
+.footer-item ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-item a{
+  text-decoration:none;
+  color:#000;
+  transition:0.3s ease;
+}
+
+.footer-item a:hover{
+  color:#007bff;
+  text-decoration:underline;
+}
+
+.footer-copy{
+  text-align:center;
+  margin-bottom:0;
+}
+</style>
+
+
+
+  </body>
+</html>
